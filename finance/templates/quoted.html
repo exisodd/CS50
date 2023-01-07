@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <td class="text-start">Symbol</td>
+                <td class="text-start">Company Name</td>
+                <td class="text-end">Price / share</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="text-start">{{info["symbol"]}}</td>
+                <td class="text-start">{{info["name"]}}</td>
+                <td class="text-end">${{info["price"] | usd}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

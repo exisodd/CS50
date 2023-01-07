@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+        <header>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link">Index</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="first">
+                <h1 class="center">ABOUT</h1>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Quis commodo odio aenean sed adipiscing diam.
+                    Quis imperdiet massa tincidunt nunc pulvinar. Tincidunt arcu non sodales neque sodales ut.
+                    Ornare lectus sit amet est placerat in. Egestas congue quisque egestas diam in arcu cursus
+                    euismod quis. Venenatis cras sed felis eget velit aliquet sagittis id. Fusce ut placerat orci.
+                    Stuff stuff stuff stuff. Yeah. Cool. Awesome.
+                </p>
+                <p class="center">
+                    In ultrices volutpat laoreet. Nullam nec aliquet magna, eu maximus velit. Mauris consectetur fermentum felis, ac auctor nunc molestie sed. Sed porttitor elementum leo, nec feugiat orci elementum nec. Praesent dictum fermentum congue. Morbi condimentum fringilla nisi, a volutpat tortor rhoncus ac. Pellentesque vulputate lobortis nunc, eu dictum neque ultrices in.
+
+Pellentesque rutrum ligula scelerisque, lacinia diam non, facilisis eros. Vestibulum lacinia rhoncus velit lacinia pretium. Donec euismod nulla vitae lobortis consequat. Suspendisse a volutpat mauris, non rhoncus neque. Pellentesque velit magna, consectetur quis gravida ut, efficitur ut erat. Quisque consectetur a metus eleifend dapibus. Suspendisse tincidunt arcu auctor faucibus semper. Pellentesque euismod ornare nulla eget efficitur.
+
+Praesent vestibulum augue non tortor pretium, ac sagittis lorem hendrerit. Aliquam magna metus, convallis et nisi cursus, fringilla eleifend sem. Phasellus in neque velit. Nunc varius condimentum magna, a vulputate diam euismod ut. Proin sit amet aliquam augue, sit amet aliquam nunc. Aenean vitae tortor ut tortor tempor efficitur sed in massa. Donec sed leo pellentesque nulla tempus venenatis. Morbi sed fringilla lectus. Donec sagittis pretium ante accumsan maximus. Vivamus velit elit, mollis vel tristique eget, malesuada vel ex. Duis quis luctus metus, ut molestie justo. Aliquam ultrices ipsum ac scelerisque pellentesque. Nulla tincidunt pulvinar tincidunt. Vestibulum a ligula scelerisque, vulputate arcu sit amet, eleifend enim. Donec a mattis turpis. Vivamus a tortor aliquet, maximus massa a, viverra lacus.
+
+In semper hendrerit quam, nec eleifend ligula pretium sed. Suspendisse varius euismod facilisis. Morbi sed convallis nunc. Sed et viverra sem, vel commodo ipsum. Vivamus sed metus at ante hendrerit tempor vel a est. Fusce nisi erat, sollicitudin accumsan nulla non, rutrum elementum est. Aliquam erat volutpat. Donec vulputate efficitur libero quis sagittis. Pellentesque tincidunt vulputate felis. Donec blandit mollis tortor a commodo. Duis viverra ligula ac nibh porta, nec rutrum nibh eleifend. Nulla a justo sagittis, commodo libero et, viverra erat.
+                </p>tp
+            </section>
+            <section id="third">
+                <h2 class="center">SHOWCASE</h2>
+                <button id="switch-color">Switch Color</button>
+            </section>
+        </main>
+        <script>
+            const colors = ["#ff0000", "#00ff00", "#0000ff"];
+            let i = 0;
+            document.getElementById("switch-color").addEventListener("click", function(e) {
+                i += 1
+                if (i > 2) {
+                    i = 0;
+                }
+                document.querySelector("body").style.backgroundColor = colors[i];
+            });
+        </script>
+    </body>
+</html>

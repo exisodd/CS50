@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+
+        <header>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="index.html" class="nav-link">Index</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="first">
+                <h1 class="center">LOREM IPSUM</h1>
+                <p class="center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Quis commodo odio aenean sed adipiscing diam.
+                    Quis imperdiet massa tincidunt nunc pulvinar. Tincidunt arcu non sodales neque sodales ut.
+                    Ornare lectus sit amet est placerat in. Egestas congue quisque egestas diam in arcu cursus
+                    euismod quis. Venenatis cras sed felis eget velit aliquet sagittis id. Fusce ut placerat orci
+                </p>
+            </section>
+            <section id="second">
+                <h2 class="center">TINCIDUNT DUI UT</h2>
+                <p class="center">
+                    ornare lectus sit amet est. Imperdiet massa tincidunt nunc pulvinar sapien et ligula.
+                    Elit duis tristique sollicitudin nibh sit amet commodo. Est pellentesque elit ullamcorper dignissim.
+                    Adipiscing elit pellentesque habitant morbi tristique senectus et. Diam quam nulla porttitor massa id
+                    neque aliquam vestibulum. Egestas tellus rutrum tellus pellentesque eu. Sed pulvinar proin gravida hendrerit.
+                    Consequat semper viverra nam libero justo laoreet sit amet. Vitae elementum curabitur vitae nunc sed.
+                </p>
+                <p class="center">In fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Tellus elementum sagittis vitae et. Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Senectus et netus et malesuada fames ac turpis. Velit egestas dui id ornare arcu. Purus ut faucibus pulvinar elementum integer. Nulla facilisi nullam vehicula ipsum a arcu. Vestibulum sed arcu non odio euismod lacinia. Ac tortor vitae purus faucibus ornare suspendisse sed. Vulputate odio ut enim blandit volutpat maecenas volutpat. Enim sed faucibus turpis in eu. Quis enim lobortis scelerisque fermentum dui faucibus in. Nec dui nunc mattis enim ut tellus elementum sagittis vitae. Urna id volutpat lacus laoreet.</p>
+            </section>
+            <section id="third">
+                <h2 class="center">SHOWCASE</h2>
+                <button id="switch-color">Switch Color</button>
+            </section>
+        </main>
+        <script>
+            const colors = ["#ff0000", "#00ff00", "#0000ff"];
+            let i = 0;
+            document.getElementById("switch-color").addEventListener("click", function(e) {
+                i += 1
+                if (i > 2) {
+                    i = 0;
+                }
+                document.querySelector("body").style.backgroundColor = colors[i];
+            });
+        </script>
+    </body>
+</html>
