@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What is the correct answer to this question?</h3>
+                <p id="p1"></p>
+                <button type="button" class="correctButton">This is the correct one!</button>
+                <button type="button" id="i1">This is the wrong one!</button>
+                <button type="button" id="i2">This is the wrong answer.</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <form>
+                    <h3>What is the current year?</h3>
+                    <p id="p2"></p>
+                    <input autocomplete="off" id="response">
+                    <input type="submit" id="enter">
+                </form>
+            </div>
+        </div>
+        <script>
+            // TODO: Add code to check answers to questions
+            const correctBtn = document.querySelector(".correctButton");
+            const answer1 = document.getElementById("p1");
+            const answer2 = document.getElementById("p2");
+            correctBtn.addEventListener("click", function(e) {
+                correctBtn.style.backgroundColor = "#00ff00";
+                answer1.innerHTML = "Correct!";
+                answer1.style.color = "#00ff00";
+                // answer1.style.color = "#00ff00";
+            });
+
+            const incorrect1 = document.querySelector("#i1");
+            const incorrect2 = document.querySelector("#i2");
+
+            incorrect1.addEventListener("click", function(e) {
+                incorrect1.style.backgroundColor = "#ff0000";
+                answer1.innerHTML = "Incorrect";
+                answer1.style.color = "#ff0000";
+            });
+            incorrect2.addEventListener("click", function(e) {
+                incorrect2.style.backgroundColor = "#ff0000";
+                answer1.innerHTML = "Incorrect";
+                answer1.style.color = "#ff0000";
+            });
+            document.querySelector("form").addEventListener("submit", function(e) {
+                var year = document.querySelector("#response").value;
+                if (year == "2022") {
+                    answer2.innerHTML = "Correct!";
+                    answer2.style.color = "#00ff00";
+                } else {
+                    answer2.innerHTML = "Incorrect";
+                    answer2.style.color = "#ff0000";
+                }
+                e.preventDefault();
+            });
+        </script>
+    </body>
+</html>

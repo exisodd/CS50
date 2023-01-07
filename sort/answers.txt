@@ -1,0 +1,30 @@
+sort1 uses: bubble
+
+How do you know?: When testing best case scenario with sorted text files, this one has the fastest run time. Because bubble sort's runtime is Omega(n) under best case, which means this is bubble sort.
+-random5000.txt:  0.093s
+-random10000.txt: 0.404s
+-random50000.txt: 7.866s
+
+-sorted5000.txt:  0.002s
+-sorted10000.txt: 0.100s
+-sorted50000.txt: 1.115s
+
+sort2 uses: merge
+
+How do you know?: It has the fastest time when testing on random data, and since its run time is O(n log n), which is significantly faster than O(n^2), we can safely say that this is merge sort.
+-random5000.txt:  0.085s
+-random10000.txt: 0.111s
+-random50000.txt: 0.830s
+
+-sorted50000.txt: 1.142s
+
+sort3 uses: selection
+
+How do you know?: Last choice left is selection sort. While its runtime is O(n^2) on random, it may be faster than bubble sort. But when testing with already sorted files, it still runs in O(n^2).
+-random5000.txt:  0.060s
+-random10000.txt: 0.217s
+-random50000.txt: 3.605s
+
+-sorted5000.txt:  0.075s
+-sorted10000.txt: 0.168s
+-sorted50000.txt: 3.753s
